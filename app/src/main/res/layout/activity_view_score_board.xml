@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewScoreBoard">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Players"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Wins"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Losses"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Ties"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/scoreboardTieListView"
+        android:layout_width="72dp"
+        android:layout_height="553dp"
+        android:entries="@array/scoreboard_Ties_ListView"
+        app:layout_constraintStart_toEndOf="@+id/scoreboardLossesListView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ListView
+        android:id="@+id/scoreboardNameListView"
+        android:layout_width="164dp"
+        android:layout_height="547dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:entries="@array/scoreboardNameListView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ListView
+        android:id="@+id/scoreboardWinsListView"
+        android:layout_width="79dp"
+        android:layout_height="614dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:entries="@array/scoreboard_Wins_ListView"
+        app:layout_constraintStart_toEndOf="@+id/scoreboardNameListView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ListView
+        android:id="@+id/scoreboardLossesListView"
+        android:layout_width="85dp"
+        android:layout_height="635dp"
+        android:entries="@array/scoreboard_Wins_ListView"
+        app:layout_constraintStart_toEndOf="@+id/scoreboardWinsListView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

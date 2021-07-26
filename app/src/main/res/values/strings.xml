@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Players</string>
+    <string-array name="scoreboardNameListView">
+        <item name="Player 1"></item>
+        <item name="Player 2"></item>
+    </string-array>
+    <string-array name="scoreboard_Wins_ListView">
+        <item name="Player 1 Wins"></item>
+        <item name="Player 2 Wins"></item>
+    </string-array>
+    <string-array name="scoreboard_Losses_ListView">
+        <item name="Player 1 Wins"></item>
+        <item name="Player 2 Wins"></item>
+    </string-array>
+    <string-array name="scoreboard_Ties_ListView">
+        <item name="Player 1 Wins"></item>
+        <item name="Player 2 Wins"></item>
+    </string-array>
+    <string-array name="player_names">
+    </string-array>
+
+</resources>
